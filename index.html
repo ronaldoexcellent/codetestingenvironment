@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Start -->
+<!-- Full Page Style -->
+<style>
+    [role=app-container] {
+        display: block;
+    }
+</style>
+
+<!-- App Holder -->
+<application role="app-container" oncontextmenu="return false">
+    
+    <!-- App Meta Data[meta /] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Code Testing Environment(CTE) By Ronaldo Excellent" />
+
+    <!-- App Title -->
+    <app::title />
+    <title>Code Testing Environment (CTE)</title>
+
+    <!-- App Style[CSS] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <app::style />
+    <link rel="stylesheet" href="cte.css" />
+    <style id="myStyle"></style>
+
+    <!-- App Layout[HTML] -->
+    <app::content />
+    <main id="main">
+        <!-- App Screen -->
+        <samp data-role="frontend"></samp>
+
+        <!-- App Workspace -->
+        <section data-role="backend" role="code-area">
+            <div role="func-btns"><img src='logo.png' title="Ronaldo Services" width="80px" height="57px" alt='official logo' /> <br> Code Testing Environment</div>
+
+            <div role="func-btns">
+                <select id="code-containers">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JS</option>
+                </select>
+                <br>
+                <button id="r" role="test-code" class="fa fa-play"></button>
+                <button id="ca" role="empty_boxes" class="fa fa-rotate"></button>
+                <button id="c" role="hide_backend" class="fa fa-times"></button>
+            </div>
+
+            <article role="showError"></article>
+
+            <textarea id="HTML" class="codebox"></textarea>
+            <textarea id="CSS" class="codebox"></textarea>
+            <textarea id="JS" class="codebox"></textarea>
+        </section>
+    </main>
+
+    <!-- App Engine[JS] -->
+    <app::engine />
+    <script src="cte.js"></script>
+
+</application>
+
+<!-- End -->
+</html>
